@@ -1,0 +1,13 @@
+<div class="text-center m-10  p-10 bg-slate-600">
+    <div class="mb-4">
+        <h1 class="text-2xl font-bold text-gray-100">
+            Counter App
+        </h1>
+    </div>
+    <div id="counter" class="text-4xl font-bold text-blue-500 mb-4">{{ count$ | async}}</div>
+    <div class="flex justify-center space-x-4">
+        <button (click)="increment()" class="bg-green-600 text-white py-4 px-4 rounded">+</button>
+        <button (click)="decrement()" class="bg-red-600 text-white py-4 px-4 rounded">-</button>
+        <button (click)="reset()" class="bg-yellow-600 text-white py-4 px-4 rounded">0</button>
+    </div>
+</div>
